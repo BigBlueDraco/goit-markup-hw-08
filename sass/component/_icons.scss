@@ -1,0 +1,41 @@
+.icon-canv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 44px;
+    width: 44px;
+  
+    background: $bg-bright-color;
+    border-radius: 100%;
+    transition: delay background-color cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .icon-canv:hover,
+.icon-canv:focus {
+  background:$accente-color;
+}
+
+.icon-canv:hover .icon,
+.icon-canv:focus .icon {
+  fill: $bg-bright-color;
+}
+
+.icon {
+    fill: $text-primary-color;
+    transition: delay fill cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .social-title {
+    margin: 0px;
+  
+    color: $bg-bright-color;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  
+    text-align: left;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }

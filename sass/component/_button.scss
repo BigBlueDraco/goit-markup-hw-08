@@ -1,0 +1,81 @@
+.button {
+    background-color: $bg-dim-color;
+    color: $text-secondery-color;
+  
+    font-weight: 500;
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 1.62;
+    cursor: pointer;
+    text-align: center;
+    letter-spacing: 0.03em;
+  
+    border-color: transparent;
+    border-radius: 4px;
+  
+    padding: 6px 20px;
+  
+    transition: $delay background-color cubic-bezier(0.4, 0, 0.2, 1),
+      $delay color cubic-bezier(0.4, 0, 0.2, 1),
+      $delay box-shadow cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .button{
+    &:hover, &:focus{
+      background-color: $accente-color;
+    color: $white;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+    }
+  }
+  .accente-button {
+    background: $accente-color;
+    color: $bg-dim-color;
+  
+    transition: $delay background-color cubic-bezier(0.4, 0, 0.2, 1),
+      $delay color cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .accente-button{
+    &:focus,
+    &:hover {
+      background: $bg-bright-color;
+      color: $accente-color;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    }
+  }
+  .buisnes-solution__button {
+    font-weight: 700;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+  
+    border-radius: 8px;
+  
+    display: flex;
+    align-items: center;
+    text-align: center;
+  
+    margin: 0 auto;
+    padding: 15px 32px;
+}
+
+.subscribe-btn{
+
+  &:hover .subscribe-btn__icon,
+  &:focus .subscribe-btn__icon {
+    fill:  $accente-color;
+  }
+
+  &__icon {
+    fill: $bg-bright-color;
+    transition: fill $delay cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  &__text {
+    text-align: center;
+  
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.06em;
+  }
+}

@@ -1,0 +1,35 @@
+.client-section {
+    padding-top: 94px;
+  }
+  .client-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+  .client-list__canv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 92px;
+    width: 170px;
+  
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+  
+    transition: $delay border-color cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .client-list__canv{
+
+    &:hover,
+    &:focus {
+      border-color: $accente-color;
+    }
+  }
+
+  
+  
+  .client-list__canv:hover .client-list__icon,
+  .client-list__canv:focus .client-list__icon {
+    fill: $accente-color;
+  }

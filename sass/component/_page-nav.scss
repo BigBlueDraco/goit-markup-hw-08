@@ -1,0 +1,34 @@
+.nav__link {
+    color: $text-secondery-color;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    padding: 32px 0px;
+  }
+  
+  .nav__item {
+    position: relative;
+  }
+  .nav__item + .nav__item {
+    margin-left: 50px;
+  }
+  .nav__link--curent {
+    color: $accente-color;
+  }
+  
+  .nav__link--curent::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: $accente-color;
+    border-radius: 2px;
+  }
+
+  .nav_flex {
+    display: flex;
+    justify-self: flex-start;
+    align-items: center;
+  }

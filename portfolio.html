@@ -13,23 +13,23 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <header class="header header-border">
+    <header class="header conteiner header-border">
       <!-- Навігація -->
       <div class="container header__flex">
         <nav class="nav nav_flex">
           <a href="./index.html" class="logo">Web<span class="black__logo">Studio</span></a>
-          <ul class="nav__ul ul-list">
+          <ul class="nav__ul ul-list mobile-hidden">
             <li class="inline nav__item">
-              <a href="./index.html" class="link nav__link">Студія</a>
+              <a href="./index.html" class="link nav__link--curent nav__link">Студія</a>
             </li>
             <li class="inline nav__item">
-              <a href="./portfolio.html" class="link nav__link nav__link--curent">Портфоліо</a>
+              <a href="./portfolio.html" class="link nav__link">Портфоліо</a>
             </li>
             <li class="inline nav__item"><a href="" class="link nav__link">Контакти</a></li>
           </ul>
         </nav>
         <!-- Контакти -->
-        <ul class="header__contacts">
+        <ul class="header__contacts mobile-hidden">
           <li class="inline">
             <a href="mailto:info@devstudio.com" class="link header__contact">
               <svg class="link-icon" width="16px" height="12px">
@@ -49,6 +49,12 @@
           </li>
         </ul>
       </div>
+
+      <button type="button" class="button burger-button" data-menu-open="">
+        <svg class="burger-button__icon" width="40px" height="40px">
+          <use href="./images/icons.svg#icon-burger-menu"></use>
+        </svg>
+      </button>
     </header>
     <main>
       <section class="catalog section">
@@ -79,7 +85,14 @@
               <a href="" class="link catalog-list__link">
                 <div class="catalog-tumb">
                   <img
-                    src="./images/portfolio/Технокряк.jpg"
+                    class="catalog-list__img"
+                    srcset="
+                      ./images/portfolio/w450/Catalog-sm-01.png  450w,
+                      ./images/portfolio/w354/Catalog-mid-01.png 354w,
+                      ./images/portfolio/w370/Catalog-l-01.png   370w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw"
+                    src="./images/portfolio/w450/Catalog-sm-01.png"
                     alt="Фото проекту"
                     width="370"
                     height="294"
@@ -101,7 +114,14 @@
               <a href="" class="link catalog-list__link">
                 <div class="catalog-tumb">
                   <img
-                    src="./images/portfolio/ПостерNewOrleanVsGoldenStar.jpg"
+                    class="catalog-list__img"
+                    srcset="
+                      ./images/portfolio/w450/Catalog-sm-02.png  450w,
+                      ./images/portfolio/w354/Catalog-mid-02.png 354w,
+                      ./images/portfolio/w370/Catalog-l-02.png   370w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw"
+                    src="./images/portfolio/w450/Catalog-sm-02.png"
                     alt="Фото проекту"
                     width="370"
                     height="294"
@@ -123,7 +143,14 @@
               <a href="" class="link catalog-list__link">
                 <div class="catalog-tumb">
                   <img
-                    src="./images/portfolio/РесторанSeafood.jpg"
+                    class="catalog-list__img"
+                    srcset="
+                      ./images/portfolio/w450/Catalog-sm-03.png  450w,
+                      ./images/portfolio/w354/Catalog-mid-03.png 354w,
+                      ./images/portfolio/w370/Catalog-l-03.png   370w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw"
+                    src="./images/portfolio/w450/Catalog-sm-03.png"
                     alt="Фото проекту"
                     width="370"
                     height="294"
@@ -145,7 +172,14 @@
               <a href="" class="link catalog-list__link">
                 <div class="catalog-tumb">
                   <img
-                    src="./images/portfolio/ПроектPrime.jpg"
+                    class="catalog-list__img"
+                    srcset="
+                      ./images/portfolio/w450/Catalog-sm-04.png  450w,
+                      ./images/portfolio/w354/Catalog-mid-04.png 354w,
+                      ./images/portfolio/w370/Catalog-l-04.png   370w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw"
+                    src="./images/portfolio/w450/Catalog-sm-04.png"
                     alt="Фото проекту"
                     width="370"
                     height="294"
@@ -167,7 +201,14 @@
               <a href="" class="link catalog-list__link">
                 <div class="catalog-tumb">
                   <img
-                    src="./images/portfolio/ПроектBoxes.jpg"
+                    class="catalog-list__img"
+                    srcset="
+                      ./images/portfolio/w450/Catalog-sm-05.png  450w,
+                      ./images/portfolio/w354/Catalog-mid-05.png 354w,
+                      ./images/portfolio/w370/Catalog-l-05.png   370w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw"
+                    src="./images/portfolio/w450/Catalog-sm-05.png"
                     alt="Фото проекту"
                     width="370"
                     height="294"
@@ -189,7 +230,14 @@
               <a href="" class="link catalog-list__link">
                 <div class="catalog-tumb">
                   <img
-                    src="./images/portfolio/InspirationHasNoBorders.jpg"
+                    class="catalog-list__img"
+                    srcset="
+                      ./images/portfolio/w450/Catalog-sm-06.png  450w,
+                      ./images/portfolio/w354/Catalog-mid-06.png 354w,
+                      ./images/portfolio/w370/Catalog-l-06.png   370w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw"
+                    src="./images/portfolio/w450/Catalog-sm-06.png"
                     alt="Фото проекту"
                     width="370"
                     height="294"
@@ -211,7 +259,14 @@
               <a href="" class="link catalog-list__link">
                 <div class="catalog-tumb">
                   <img
-                    src="./images/portfolio/ИзданиеLimitedEdition.jpg"
+                    class="catalog-list__img"
+                    srcset="
+                      ./images/portfolio/w450/Catalog-sm-07.png  450w,
+                      ./images/portfolio/w354/Catalog-mid-07.png 354w,
+                      ./images/portfolio/w370/Catalog-l-07.png   370w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw"
+                    src="./images/portfolio/w450/Catalog-sm-07.png"
                     alt="Фото проекту"
                     width="370"
                     height="294"
@@ -233,7 +288,14 @@
               <a href="" class="link catalog-list__link">
                 <div class="catalog-tumb">
                   <img
-                    src="./images/portfolio/ПроектLAB.jpg"
+                    class="catalog-list__img"
+                    srcset="
+                      ./images/portfolio/w450/Catalog-sm-08.png  450w,
+                      ./images/portfolio/w354/Catalog-mid-08.png 354w,
+                      ./images/portfolio/w370/Catalog-l-08.png   370w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw"
+                    src="./images/portfolio/w450/Catalog-sm-08.png"
                     alt="Фото проекту"
                     width="370"
                     height="294"
@@ -255,7 +317,14 @@
               <a href="" class="link catalog-list__link">
                 <div class="catalog-tumb">
                   <img
-                    src="./images/portfolio/GrowingBusiness.jpg"
+                    class="catalog-list__img"
+                    srcset="
+                      ./images/portfolio/w450/Catalog-sm-09.png  450w,
+                      ./images/portfolio/w354/Catalog-mid-09.png 354w,
+                      ./images/portfolio/w370/Catalog-l-09.png   370w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw"
+                    src="./images/portfolio/w450/Catalog-sm-09.png"
                     alt="Фото проекту"
                     width="370"
                     height="294"
@@ -278,36 +347,39 @@
     </main>
     <!-- Адреси -->
     <footer class="footer">
-      <div class="container footer-warp">
-        <div>
-          <a href="./index.html" class="logo footer-logo"
-            >Web<span class="white-logo">Studio</span></a
-          >
-          <address>
-            <ul class="">
-              <li class="address__item">
-                <a
-                  href="https://goo.gl/maps/piqngm7oDQpEDh6u6"
-                  target="_blank"
-                  rel="noopener nofollow noreferrer"
-                  class="link map-link"
-                >
-                  м. Київ, пр-т Лесі Українки, 26
-                </a>
-              </li>
+      <div class="container footer-tumb">
+        <div class="footer__addres-medias-wrap">
+          <div class="footer__addrees-tumb">
+            <a href="./index.html" class="logo footer-logo"
+              >Web<span class="white-logo">Studio</span></a
+            >
+            <address>
+              <ul class="footer__address-list">
+                <li class="address__item">
+                  <a
+                    href="https://goo.gl/maps/piqngm7oDQpEDh6u6"
+                    target="_blank"
+                    rel="noopener nofollow noreferrer"
+                    class="link map-link"
+                  >
+                    м. Київ, пр-т Лесі Українки, 26
+                  </a>
+                </li>
 
-              <li class="address__item">
-                <a href="mailto:info@devstudio.com" class="link contact-link">info@devstudio.com</a>
-              </li>
+                <li class="address__item">
+                  <a href="mailto:info@devstudio.com" class="link contact-link"
+                    >info@devstudio.com</a
+                  >
+                </li>
 
-              <li class="address__item">
-                <a href="tel:+380961111111" class="link contact-link">+38 096 111 11 11</a>
-              </li>
-            </ul>
-          </address>
-        </div>
-        <div class="footer-flex">
-          <div>
+                <li class="address__item">
+                  <a href="tel:+380961111111" class="link contact-link">+38 096 111 11 11</a>
+                </li>
+              </ul>
+            </address>
+          </div>
+
+          <div class="footer__medias-tumb">
             <p class="social-title">приєднуйтесь</p>
             <ul class="media-contacts">
               <li>
@@ -340,21 +412,69 @@
               </li>
             </ul>
           </div>
-          <div>
-            <p class="social-title">Підпишіться на розсилку</p>
-            <form class="footer-form" onsubmit="return false">
-              <input class="footer-email-input" type="email" placeholder="E-mail" />
+        </div>
 
-              <button class="accente-button subscribe-btn" type="submit">
-                <span class="subscribe-btn__text"> Підписатися </span>
-                <svg class="subscribe-btn__icon" width="24px" height="24px">
-                  <use href="./images/icons.svg#icon-send"></use>
-                </svg>
-              </button>
-            </form>
-          </div>
+        <div class="footer__form-tumb">
+          <p class="social-title">Підпишіться на розсилку</p>
+          <form class="footer-form" onsubmit="return false">
+            <input class="footer-email-input" type="email" placeholder="E-mail" />
+
+            <button class="accente-button subscribe-btn" type="submit">
+              <span class="subscribe-btn__text"> Підписатися </span>
+              <svg class="subscribe-btn__icon" width="24px" height="24px">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>
+
+    <div class="mobile-menu" data-menu="">
+      <button class="mobile-close__btn" type="button" data-menu-close>
+        <svg class="icon mobile-close_icon" width="19px" height="19px">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+      <div class="mobile-menu__warp">
+        <div class="mobile-nav-contacts-warp">
+          <ul class="mobile-nav-list">
+            <li class="modil-nav-list__item">
+              <a href="./index.html" class="link mobile-nav-list__link mobile-nav-list__curent"
+                >Студія</a
+              >
+            </li>
+            <li class="modil-nav-list__item">
+              <a href="./portfolio.html" class="link mobile-nav-list__link">Портфоліо</a>
+            </li>
+            <li class="modil-nav-list__item">
+              <a href="" class="link mobile-nav-list__link">Контакти</a>
+            </li>
+          </ul>
+
+          <ul class="mobile-menu__contacts">
+            <li class="mobile-menu__contact">
+              <a href="tel:+380961111111" class="link mobile-menu__phone"> +38 096 111 11 11</a>
+            </li>
+            <li class="mobile-menu__contact">
+              <a href="mailto:info@devstudio.com" class="link mobile-menu__mail">
+                info@devstudio.com
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <ul class="mobile-menu__medias">
+          <li class="mobile-menu__media">
+            <a href="" class="mobile-menu__link link">Instagram</a>
+          </li>
+          <li class="mobile-menu__media"><a href="" class="mobile-menu__link link">Twitter</a></li>
+          <li class="mobile-menu__media"><a href="" class="mobile-menu__link link">Facebook</a></li>
+          <li class="mobile-menu__media"><a href="" class="mobile-menu__link link">LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

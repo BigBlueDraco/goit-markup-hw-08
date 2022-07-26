@@ -8,33 +8,32 @@
     background-size: cover;
     max-width: 1600px;
     background-repeat: no-repeat;
-    // background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    //   url(../../images/studio/hero/hero-bg.png);
+  
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../../images/studio/hero/hero-sm.png);
+    url(../images/studio/hero/hero-sm.png);
 
       @media (min-resolution: 2dppx) {
         background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../../images/studio/hero/hero-sm-x2.png);
+        url(../images/studio/hero/hero-sm-x2.png);
       }
       @media (min-width:481px){
         background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../../images/studio/hero/hero-mid.png);
+        url(../images/studio/hero/hero-mid.png);
       }
 
       @media (min-width:481px) and (min-resolution: 2dppx){
         background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../../images/studio/hero/Hero-mid-x2.png);
+        url(../images/studio/hero/Hero-mid-x2.png);
       }
 
       @media (min-width:1200px){
         background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../../images/studio/hero/hero-bg.png);
+        url(../images/studio/hero/hero-bg.png);
       }
 
       @media (min-width:1200px) and (min-resolution: 2dppx){
         background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../../images/studio/hero/hero-bg-x2.png);
+        url(../images/studio/hero/hero-bg-x2.png);
       }
   }
   .buisnes-solution__title {

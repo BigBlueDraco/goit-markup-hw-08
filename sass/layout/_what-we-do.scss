@@ -1,4 +1,14 @@
+.what-we-do{
+  @media screen and (max-width: 1199px) {
+    display: none;
+  } 
+}
+
+.what-we-do__title{
+}
+
 .what-we-do__list {
+
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -11,7 +21,7 @@
     position: absolute;
     left: 0;
     bottom: 0;
-    z-index: 1000;
+    z-index: 10;
   
     display: flex;
     align-items: center;

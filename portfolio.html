@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebStudio</title>
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <header class="header conteiner header-border">
+      <!-- Навігація -->
+      <div class="container header__flex">
+        <nav class="nav nav_flex">
+          <a href="./index.html" class="logo">Web<span class="black__logo">Studio</span></a>
+          <ul class="nav__ul ul-list mobile-hidden">
+            <li class="inline nav__item">
+              <a href="./index.html" class="link nav__link--curent nav__link">Студія</a>
+            </li>
+            <li class="inline nav__item">
+              <a href="./portfolio.html" class="link nav__link">Портфоліо</a>
+            </li>
+            <li class="inline nav__item"><a href="" class="link nav__link">Контакти</a></li>
+          </ul>
+        </nav>
+        <!-- Контакти -->
+        <ul class="header__contacts mobile-hidden">
+          <li class="inline">
+            <a href="mailto:info@devstudio.com" class="link header__contact">
+              <svg class="link-icon" width="16px" height="12px">
+                <use href="./images/icons.svg#icon-envelope"></use>
+              </svg>
+
+              info@devstudio.com
+            </a>
+          </li>
+          <li class="inline">
+            <a href="tel:+380961111111" class="link header__contact">
+              <svg class="link-icon" width="10px" height="16px">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+              +38 096 111 11 11</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <button type="button" class="button burger-button" data-menu-open="">
+        <svg class="burger-button__icon" width="40px" height="40px">
+          <use href="./images/icons.svg#icon-burger-menu"></use>
+        </svg>
+      </button>
+    </header>
+    <main>
+      <section class="catalog section">
+        <div class="container">
+          <h1 class="visually-hidden">Заголовок1</h1>
+          <ul class="filter-list">
+            <li class="inline filter-item">
+              <button type="button" class="button curent-filter">Всі</button>
+            </li>
+            <li class="inline filter-item">
+              <button type="button" class="button">Веб-сайти</button>
+            </li>
+            <li class="inline filter-item">
+              <button type="button" class="button">Застосунки</button>
+            </li>
+            <li class="inline filter-item">
+              <button type="button" class="button">Дизайн</button>
+            </li>
+            <li class="inline filter-item">
+              <button type="button" class="button">Маркетинг</button>
+            </li>
+          </ul>
+
+          <!-- Каталог -->
+          <h2 class="visually-hidden">Заголовок 2</h2>
+          <ul class="catalog-list">
+            <li class="inline catalog-list__item">
+              <a href="" class="link catalog-list__link">
+                <div class="catalog-tumb">
+                  <img
+                    class="catalog-list__img"
+                    srcset="
+                      ./images/portfolio/w450/Catalog-sm-01.png  450w,
+                      ./images/portfolio/w354/Catalog-mid-01.png 354w,
+                      ./images/portfolio/w370/Catalog-l-01.png   370w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw"
+                    src="./images/portfolio/w450/Catalog-sm-01.png"
+                    alt="Фото проекту"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="catalog-overlay">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                    приватну особу.
+                  </p>
+                </div>
+                <div class="catalog-content">
+                  <h3 class="catalog-title">Технокряк</h3>
+                  <p class="catalog-type">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="inline catalog-list__item">
+              <a href="" class="link catalog-list__link">
+                <div class="catalog-tumb">
+                  <img
+                    class="catalog-list__img"
+                    srcset="
+                      ./images/portfolio/w450/Catalog-sm-02.png  450w,
+                      ./images/portfolio/w354/Catalog-mid-02.png 354w,
+                      ./images/portfolio/w370/Catalog-l-02.png   370w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw"
+                    src="./images/portfolio/w450/Catalog-sm-02.png"
+                    alt="Фото проекту"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="catalog-overlay">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                    приватну особу.
+                  </p>
+                </div>
+                <div class="catalog-content">
+                  <h3 class="catalog-title">Афіша New Orleans vs Golden Star</h3>
+                  <p class="catalog-type">Дизайн</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="inline catalog-list__item">
+              <a href="" class="link catalog-list__link">
+                <div class="catalog-tumb">
+                  <img
+                    class="catalog-list__img"
+                    srcset="
+                      ./images/portfolio/w450/Catalog-sm-03.png  450w,
+                      ./images/portfolio/w354/Catalog-mid-03.png 354w,
+                      ./images/portfolio/w370/Catalog-l-03.png   370w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw"
+                    src="./images/portfolio/w450/Catalog-sm-03.png"
+                    alt="Фото проекту"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="catalog-overlay">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                    приватну особу.
+                  </p>
+                </div>
+                <div class="catalog-content">
+                  <h3 class="catalog-title">Ресторан Seafood</h3>
+                  <p class="catalog-type">Застосунок</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="inline catalog-list__item">
+              <a href="" class="link catalog-list__link">
+                <div class="catalog-tumb">
+                  <img
+                    class="catalog-list__img"
+                    srcset="
+                      ./images/portfolio/w450/Catalog-sm-04.png  450w,
+                      ./images/portfolio/w354/Catalog-mid-04.png 354w,
+                      ./images/portfolio/w370/Catalog-l-04.png   370w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw"
+                    src="./images/portfolio/w450/Catalog-sm-04.png"
+                    alt="Фото проекту"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="catalog-overlay">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                    приватну особу.
+                  </p>
+                </div>
+                <div class="catalog-content">
+                  <h3 class="catalog-title">Проект Prime</h3>
+                  <p class="catalog-type">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="inline catalog-list__item">
+              <a href="" class="link catalog-list__link">
+                <div class="catalog-tumb">
+                  <img
+                    class="catalog-list__img"
+                    srcset="
+                      ./images/portfolio/w450/Catalog-sm-05.png  450w,
+                      ./images/portfolio/w354/Catalog-mid-05.png 354w,
+                      ./images/portfolio/w370/Catalog-l-05.png   370w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw"
+                    src="./images/portfolio/w450/Catalog-sm-05.png"
+                    alt="Фото проекту"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="catalog-overlay">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                    приватну особу.
+                  </p>
+                </div>
+                <div class="catalog-content">
+                  <h3 class="catalog-title">Проект Boxes</h3>
+                  <p class="catalog-type">Застосунок</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="inline catalog-list__item">
+              <a href="" class="link catalog-list__link">
+                <div class="catalog-tumb">
+                  <img
+                    class="catalog-list__img"
+                    srcset="
+                      ./images/portfolio/w450/Catalog-sm-06.png  450w,
+                      ./images/portfolio/w354/Catalog-mid-06.png 354w,
+                      ./images/portfolio/w370/Catalog-l-06.png   370w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw"
+                    src="./images/portfolio/w450/Catalog-sm-06.png"
+                    alt="Фото проекту"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="catalog-overlay">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                    приватну особу.
+                  </p>
+                </div>
+                <div class="catalog-content">
+                  <h3 class="catalog-title">Inspiration has no Borders</h3>
+                  <p class="catalog-type">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="inline catalog-list__item">
+              <a href="" class="link catalog-list__link">
+                <div class="catalog-tumb">
+                  <img
+                    class="catalog-list__img"
+                    srcset="
+                      ./images/portfolio/w450/Catalog-sm-07.png  450w,
+                      ./images/portfolio/w354/Catalog-mid-07.png 354w,
+                      ./images/portfolio/w370/Catalog-l-07.png   370w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw"
+                    src="./images/portfolio/w450/Catalog-sm-07.png"
+                    alt="Фото проекту"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="catalog-overlay">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                    приватну особу.
+                  </p>
+                </div>
+                <div class="catalog-content">
+                  <h3 class="catalog-title">Видавництво Limited Edition</h3>
+                  <p class="catalog-type">Дизайн</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="inline catalog-list__item">
+              <a href="" class="link catalog-list__link">
+                <div class="catalog-tumb">
+                  <img
+                    class="catalog-list__img"
+                    srcset="
+                      ./images/portfolio/w450/Catalog-sm-08.png  450w,
+                      ./images/portfolio/w354/Catalog-mid-08.png 354w,
+                      ./images/portfolio/w370/Catalog-l-08.png   370w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw"
+                    src="./images/portfolio/w450/Catalog-sm-08.png"
+                    alt="Фото проекту"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="catalog-overlay">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                    приватну особу.
+                  </p>
+                </div>
+                <div class="catalog-content">
+                  <h3 class="catalog-title">Проект LAB</h3>
+                  <p class="catalog-type">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="inline catalog-list__item">
+              <a href="" class="link catalog-list__link">
+                <div class="catalog-tumb">
+                  <img
+                    class="catalog-list__img"
+                    srcset="
+                      ./images/portfolio/w450/Catalog-sm-09.png  450w,
+                      ./images/portfolio/w354/Catalog-mid-09.png 354w,
+                      ./images/portfolio/w370/Catalog-l-09.png   370w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw"
+                    src="./images/portfolio/w450/Catalog-sm-09.png"
+                    alt="Фото проекту"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="catalog-overlay">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                    приватну особу.
+                  </p>
+                </div>
+                <div class="catalog-content">
+                  <h3 class="catalog-title">Growing Business</h3>
+                  <p class="catalog-type">Застосунок</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <!-- Адреси -->
+    <footer class="footer">
+      <div class="container footer-tumb">
+        <div class="footer__addres-medias-wrap">
+          <div class="footer__addrees-tumb">
+            <a href="./index.html" class="logo footer-logo"
+              >Web<span class="white-logo">Studio</span></a
+            >
+            <address>
+              <ul class="footer__address-list">
+                <li class="address__item">
+                  <a
+                    href="https://goo.gl/maps/piqngm7oDQpEDh6u6"
+                    target="_blank"
+                    rel="noopener nofollow noreferrer"
+                    class="link map-link"
+                  >
+                    м. Київ, пр-т Лесі Українки, 26
+                  </a>
+                </li>
+
+                <li class="address__item">
+                  <a href="mailto:info@devstudio.com" class="link contact-link"
+                    >info@devstudio.com</a
+                  >
+                </li>
+
+                <li class="address__item">
+                  <a href="tel:+380961111111" class="link contact-link">+38 096 111 11 11</a>
+                </li>
+              </ul>
+            </address>
+          </div>
+
+          <div class="footer__medias-tumb">
+            <p class="social-title">приєднуйтесь</p>
+            <ul class="media-contacts">
+              <li>
+                <a class="icon-canv footer__icon-canv" href="#">
+                  <svg class="icon" width="20px" height="20px">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a class="icon-canv footer__icon-canv" href="#">
+                  <svg class="icon" width="20px" height="20px">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a class="icon-canv footer__icon-canv" href="#">
+                  <svg class="icon" width="20px" height="20px">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a class="icon-canv footer__icon-canv" href="#">
+                  <svg class="icon" width="20px" height="20px">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer__form-tumb">
+          <p class="social-title">Підпишіться на розсилку</p>
+          <form class="footer-form" onsubmit="return false">
+            <input class="footer-email-input" type="email" placeholder="E-mail" />
+
+            <button class="accente-button subscribe-btn" type="submit">
+              <span class="subscribe-btn__text"> Підписатися </span>
+              <svg class="subscribe-btn__icon" width="24px" height="24px">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </footer>
+
+    <div class="mobile-menu" data-menu="">
+      <button class="mobile-close__btn" type="button" data-menu-close>
+        <svg class="icon mobile-close_icon" width="19px" height="19px">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+      <div class="mobile-menu__warp">
+        <div class="mobile-nav-contacts-warp">
+          <ul class="mobile-nav-list">
+            <li class="modil-nav-list__item">
+              <a href="./index.html" class="link mobile-nav-list__link mobile-nav-list__curent"
+                >Студія</a
+              >
+            </li>
+            <li class="modil-nav-list__item">
+              <a href="./portfolio.html" class="link mobile-nav-list__link">Портфоліо</a>
+            </li>
+            <li class="modil-nav-list__item">
+              <a href="" class="link mobile-nav-list__link">Контакти</a>
+            </li>
+          </ul>
+
+          <ul class="mobile-menu__contacts">
+            <li class="mobile-menu__contact">
+              <a href="tel:+380961111111" class="link mobile-menu__phone"> +38 096 111 11 11</a>
+            </li>
+            <li class="mobile-menu__contact">
+              <a href="mailto:info@devstudio.com" class="link mobile-menu__mail">
+                info@devstudio.com
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <ul class="mobile-menu__medias">
+          <li class="mobile-menu__media">
+            <a href="" class="mobile-menu__link link">Instagram</a>
+          </li>
+          <li class="mobile-menu__media"><a href="" class="mobile-menu__link link">Twitter</a></li>
+          <li class="mobile-menu__media"><a href="" class="mobile-menu__link link">Facebook</a></li>
+          <li class="mobile-menu__media"><a href="" class="mobile-menu__link link">LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <script src="./js/mobile-menu.js"></script>
+  </body>
+</html>

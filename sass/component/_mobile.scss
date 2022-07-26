@@ -1,0 +1,135 @@
+.mobile-menu{
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  
+    width: 100%;
+    height: 100%;
+  
+    background: #ffffff;
+}
+
+.mobile-menu{
+    &__contacts{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 32px;
+    }
+
+    &__phone{
+        font-weight: 500;
+        font-size: 34px;
+        line-height: 40px;
+
+        letter-spacing: 0.02em;
+        color: $accente-color;
+    }
+
+
+    &__mail{
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: 0.02em;
+        color: $text-primary-color;
+    }
+
+    &__medias{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start; 
+        gap: 20px;
+    }
+
+    &__media{
+        position: relative; 
+    }
+    &__link{
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 1.22;
+        letter-spacing: 0.02em;
+
+        color: $accente-color;
+    }
+    &__media + &__media &__link::before{
+        content: '';
+        position: absolute;
+        bottom: 0px;
+        left: -10px;
+        width: 0px;
+        height: 100%;
+        border: 1px solid rgba(33, 33, 33, 0.2);
+    }
+}
+
+.mobile-nav-contacts-warp{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 300px;
+
+    margin-top: 48px;
+    
+}
+
+.mobile-menu__warp{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 64px;
+    margin-left: 40px;
+}
+
+.mobile-close__btn{
+    position: absolute;
+    right: 25px;
+    top: 21px;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border: transparent;
+
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.mobile-close_icon{
+    flex-shrink: 0;
+    fill: $text-secondery-color;
+}
+.is-open{
+    display: block;
+}
+
+.mobile-nav-list{
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 35px;
+    
+    &__contact{    
+    }   
+    
+    &__link{
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 1.17;
+        text-align: center;
+        letter-spacing: 0.02em;
+        color: $text-secondery-color;
+    }
+
+    &__curent{
+        color: $accente-color;
+    }
+}

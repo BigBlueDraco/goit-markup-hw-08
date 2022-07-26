@@ -1,0 +1,50 @@
+.link-icon {
+    transition: $delay fill cubic-bezier(0.4, 0, 0.2, 1);
+  }
+.link-icon{
+    .link:hover & {
+    fill: currentColor;
+    }
+}
+  
+.link {
+    text-decoration: none;
+    font-weight: inherit;
+    font-style: normal;
+    display: inline-block;
+    transition: $delay color cubic-bezier(0.4, 0, 0.2, 1);
+}
+.link{
+  
+  &:focus,
+  &:hover {
+    color: $accente-color;
+  }
+}
+
+  
+  /* Contact links */
+
+  .contact-link {
+    color: $text-contacts-color;
+    font-size: 14px;
+    line-height: inherit;
+    letter-spacing: 0.03em;
+  }
+  .contact-link:hover,
+  .contact-link:focus {
+    color: $text-contacts-color;
+  }
+  
+  .map-link {
+    color: $white;
+  }
+  
+  .map-link{
+    &:hover,
+    &:focus {
+      color: $white;
+    } 
+  }
+   
+  

@@ -19,7 +19,7 @@
   .catalog-list__item {
     width: 100%;
     max-width: 450px;
-    flex-grow: 1;
+    display: flex;
 
     @media screen and (min-width:768px){
       max-width: 354px;
@@ -106,4 +106,5 @@
     border: 1px solid #eee;
     height: 100%;
     max-height: 150px;
+    flex-shrink: 1;
   }

@@ -1438,18 +1438,19 @@ body {
 .catalog-list__item {
   width: 100%;
   max-width: 450px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 @media screen and (min-width: 768px) {
   .catalog-list__item {
     max-width: 354px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 @media screen and (min-width: 1200px) {
   .catalog-list__item {
     max-width: 370px;
+    display: block;
   }
 }
 
